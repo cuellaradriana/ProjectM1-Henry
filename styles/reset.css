@@ -1,0 +1,90 @@
+/* reset.css */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Reset padding on ul, ol elements */
+ul,
+ol {
+    padding: 0;
+}
+
+/* Set core body defaults */
+body {
+    line-height: 1;
+}
+
+/* Remove default table spacing */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Reset some default styles */
+button,
+input,
+textarea,
+select {
+    margin: 0;
+}
+
+/* Reset button styling */
+button {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+}
+
+/* Reset input styling */
+input {
+    border-radius: 0;
+}
+
+/* Reset textarea styling */
+textarea {
+    resize: none;
+}
+
+/* Reset select styling */
+select {
+    text-indent: 0;
+}
+
+/* Reset anchor styling */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Reset media elements */
+img,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+/* Additional resets or styles can be added as needed */

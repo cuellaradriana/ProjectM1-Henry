@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles/reset.css" />
+        <link rel="stylesheet" href="./styles/styles.css" />
+        <title>Proyecto M1</title>
+    </head>
+
+    <body>
+        <header>
+            <div id="titleAndLogo">
+                <div id="headerTitles">
+                    <h1>Adriana Cuellar</h1>
+                    <span>Mi Página Web</span>
+                </div>
+                <img
+                    src="./assets/images/developer.svg"
+                    alt="chica programando"
+                    id="headerImg"
+                />
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#aboutMe">Sobre Mi</a></li>
+                    <li><a href="#favTech">Tecnologías Favoritas</a></li>
+                    <li><a href="#favAct">Actividades Favoritas</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="aboutMe">
+                <article>
+                    <div id="textContent">
+                        <h2>Sobre Mi</h2>
+                        <p>
+                            ¡Hola! Soy Adri, tengo 30 años y soy de Venezuela
+                            pero actualmente vivo en Buenos Aires Argentina,
+                            vengo estudiando desarrollo web desde el 2021 pero
+                            quise encontrar una plataforma que me brindara mayor
+                            soporte y me exigiera un poco más así que por eso
+                            estoy ahora en Henry, rompiendola!!!
+                        </p>
+                    </div>
+                    <img
+                        src="./assets/images/hello.png"
+                        alt="emoji saludando"
+                        id="myEmoji"
+                    />
+                </article>
+            </section>
+            <section id="favTech">
+                <h2>Mis Tecnologías Favoritas</h2>
+                <article id="containerTech">
+                    <div class="cardsTech">
+                        <h3>HTML</h3>
+                        <div class="logoTech" id="htmlLogo"></div>
+                    </div>
+                    <div class="cardsTech">
+                        <h3>CSS</h3>
+                        <div class="logoTech" id="cssLogo"></div>
+                    </div>
+                    <div class="cardsTech">
+                        <h3>JavaScript</h3>
+                        <div class="logoTech" id="jsLogo"></div>
+                    </div>
+                </article>
+            </section>
+            <section id="favAct">
+                <h2>Mis Actividades Favoritas</h2>
+                <form action="post">
+                    <div id="containerForm">
+                        <input
+                            type="text"
+                            name="name"
+                            id="nameAct"
+                            placeholder="Nombre de la actividad"
+                            required
+                        />
+                        <textarea
+                            name="description"
+                            id="descriptionAct"
+                            cols="20"
+                            rows="3"
+                            placeholder="Descripción de la actividad"
+                            required
+                        ></textarea>
+                        <input
+                            type="url"
+                            id="urlImg"
+                            name="url"
+                            placeholder="Link de la imagen"
+                            required
+                            pattern="https?://.+"
+                        />
+                        <input
+                            type="submit"
+                            value="Subir Actividad"
+                            id="submitAct"
+                        />
+                    </div>
+                </form>
+                <div id="cardsActContainer">
+                    <span id="spanAct">Aun no se han agregado actividades</span>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>
+                &copy; 2024 Adriana Cuellar. Proyecto para el Módulo 1 HENRY.
+                Todos los derechos reservados.
+            </p>
+        </footer>
+
+        <script type="module" src="./scripts/index.js"></script>
+        <script type="module" src="./scripts/cardsActivity.js"></script>
+    </body>
+</html>
